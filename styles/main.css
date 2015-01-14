@@ -1,0 +1,167 @@
+/* Fonts */
+/* Colors */
+/* Width */
+/* Layout */
+body {
+  margin: 0; }
+
+header {
+  position: relative;
+  background-image: url("../images/liberty_bar.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px; }
+  header::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 1000ms; }
+  header:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+    transition: 1000ms; }
+
+/* Menu */
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5; }
+
+.menu-container {
+  width: 960px;
+  height: 75px;
+  margin: 0 auto;
+  padding-top: 15px; }
+
+.menu-logo, .menu-links {
+  display: inline-block;
+  vertical-align: top; }
+
+.menu-logo {
+  background: url("../images/libertysquare_logo.png");
+  width: 325px;
+  height: 50px; }
+
+.menu-links {
+  float: right;
+  margin-top: 10px; }
+  .menu-links a {
+    text-decoration: none;
+    color: #bababa;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 12px; }
+    .menu-links a:hover {
+      color: #FFF;
+      transition: 500ms; }
+    .menu-links a .search {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 5px; }
+
+.menu-links a {
+  margin-left: 20px;
+  letter-spacing: 1px; }
+
+.heading-container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center; }
+  .heading-container .more-info {
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 7px;
+    width: 240px;
+    height: 50px;
+    padding-top: 12px;
+    margin: 0 auto;
+    top: 350px; }
+    .heading-container .more-info a {
+      font-size: 16px;
+      color: #FFF;
+      text-transform: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+    .heading-container .more-info:hover {
+      border: 1px solid #d12722;
+      background: rgba(0, 0, 0, 0.5);
+      transition: 1000ms; }
+      .heading-container .more-info:hover a {
+        color: #d12722;
+        transition: 1000ms; }
+
+.more-info {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  top: 200px; }
+
+.content {
+  width: 100%;
+  height: 200px;
+  background: #dfdfdf; }
+
+section {
+  width: 100%;
+  height: 200px;
+  background: white; }
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 300px;
+  background: #FFF;
+  border-top: 1px solid #dfdfdf; }
+
+.footer-container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 15px; }
+
+.footer-column {
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+  list-style: none;
+  padding-left: 0; }
+  .footer-column h3 {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #555;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+    .footer-column h3:hover {
+      color: #000;
+      transition: 1000ms; }
+  .footer-column a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #bababa;
+    font-weight: 300; }
+    .footer-column a:hover {
+      color: #555;
+      transition: 1000ms; }
+
+/* Box-Sizing */
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */
