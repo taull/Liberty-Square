@@ -2,64 +2,162 @@
 <html lang="en">
 <link rel="stylesheet" href="styles/main.css">
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,900,500,500italic,400italic,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Halant:300,400,500,600,700" rel="stylesheet" type="text/css">
 <head>
   <meta charset="UTF-8">
   <title>Liberty Square</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+  <script src="jquery.localScroll.js" type="text/javascript"></script>
+  <script src="jquery.scrollTo.js" type="text/javascript"></script>
+  <script type="text/javascript" src="main.js"></script>
+
 </head>
 <body>
-  <header>
+  <header class="header">
+    <a name="home"></a>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.header').localScroll({duration:800});
+    });
+    </script>
     <div class="menu">
       <div class="menu-container">
-        <div class="menu-logo"></div>
+        <div class="menu-logo">
+        </div>
+
         <div class="menu-links">
+
           <a href="#">Home</a>
-          <a href="#">Contact</a>
-          <a href="#">Property Info</a>
-          <a href="#">Area</a>
+          <a href="property.html">Property Info</a>
+          <a href="about.html">Meet the Team</a>
+          <a href="area.html">Area</a>
           <a href="#"><img class="search" src="images/search.png" alt="Search"></a>
         </div>
       </div>
     </div>
-    <div class="heading-container">
-      <div class="more-info">
-        <a>Request Information</a>
+    <div class="navigation">
+      <div class="navigation-container">
+        <div class="navigation-links">
+          <p>Page Navigation:</p>
+          <a href="#history">History</a>
+          <a href="#tenants">Tenants</a>
+          <a href="#contact">Contact</a>
+          <a href="#home">Back to Top</a>
+
+          <script type="text/javascript">
+          $(document).ready(function() {
+            $('.menu-links').localScroll({duration:800});
+          });
+          </script>
+        </div>
       </div>
     </div>
   </header>
 
 
-  <div class="content">
 
+  <div class="content"><a name="history"></a>
+    <div class="property-grid">
+      <div class="property-image">
+        <img src="images/LS_lineart.jpg" alt="Liberty Square">
+      </div>
+      <div class="property-text">
+        <div class="header-title-container">
+          <div class="header-title">
+            <p class="header-title-top">Making a statement in</p>
+            <p class="header-title-bottom">Downtown Greenville</p>
+          </div>
+          <div class="greenville-logo">
+            <img src="images/greenville_logo.png" alt="Greenville">
+          </div>
+        </div>
+        <p>Located at 55, 61, and 75 Beattie Place in vibrant Downtown Greenville, South Carolina, these attractive glass curtain wall buildings are conveniently positioned less than one half mile to the terminus of I-385. One and Two Liberty Square were constructed in 1983 and 1986, respectively, and were extensively renovated in 2005. The One Liberty Square passenger elevator cabs were recently renovated in addition to a new full service Fitness Center to be completed in 2013.</p>
+      </div>
+    </div>
   </div>
 
-  <section>
 
+
+  <div class="tenants"><a name="tenants"></a>
+    <div class="tenants-grid">
+      <div class="tenants-text">
+        <h3>Tenants</h3>
+        <p>Notable tenants in One and Two Liberty Square include: Sherman Financial Group; Brown Mackie College; the U.S. Attorney's Office; Gallivan, White & Boyd; Commerce Club; Ernst & Young; Dority & Manning; and Robert Half International.</p>
+      </div>
+      <div class="tenants-logos">
+        <ul>
+          <li><img src="images/MGC_logo.png" alt="MGC"></li>
+          <li><img src="images/cc-logo.png" alt="Commerce Club"></li>
+          <li><img src="images/sfg_logo.png" alt="SFG"></li>
+        </ul>
+        <ul>
+          <li><img src="images/EY_logo.png" alt="Ernest Young"></li>
+          <li><img src="images/rhalf_logo.png" alt="Rober Half International"></li>
+          <li><img src="images/US_attorney.png" alt="US Attorney"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="footer-form">
+
+      <div class="form-heading">
+        <a name="contact"><p class="form-title">Leave your information and one of our associates will get back to you as soon as possible.</p></a>
+      </div>
+
+      <form action="">
+        <div class="item">
+          <div class="firstname">
+            <label for="firstname">First Name</label>
+            <input name="firstname" type="text" />
+          </div>
+          <div class="lastname">
+            <label for="lastname">Last Name</label>
+            <input name="lastname" type="text" />
+          </div>
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input name="email" type="text" />
+          </div>
+          <div class="form-button">
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer>
     <div class="footer-container">
-      <ul class="footer-column">
-        <h3>Site Map</h3>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact / FAQ</a></li>
-        <li><a href="#">Property Info</a></li>
-        <li><a href="#">Area</a></li>
-      </ul>
-      <ul class="footer-column">
-        <h3>Sample</h3>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Property Info</a></li>
-        <li><a href="#">Area</a></li>
-      </ul>
-      <ul class="footer-column">
-        <h3>Connect</h3>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact / FAQ</a></li>
-        <li><a href="#">Property Info</a></li>
-        <li><a href="#">Area</a></li>
-      </ul>
+      <div class="footer-links">
+        <ul class="footer-column">
+          <h3>Site Map</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact / FAQ</a></li>
+          <li><a href="#">Property Info</a></li>
+          <li><a href="#">Area</a></li>
+        </ul>
+        <ul class="footer-column">
+          <h3>Sample</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Property Info</a></li>
+          <li><a href="#">Area</a></li>
+        </ul>
+        <ul class="footer-column">
+          <h3>Connect</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact / FAQ</a></li>
+          <li><a href="#">Property Info</a></li>
+          <li><a href="#">Area</a></li>
+        </ul>
+      </div>
     </div>
+
   </footer>
+
+
 </body>
 </html>
